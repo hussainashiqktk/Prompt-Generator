@@ -2,6 +2,9 @@
 
 Welcome to the Prompt Generator App, a web-based tool designed to help users create structured prompts for Large Language Models (LLMs) by combining pre-defined prompts with user input. This app allows you to store, select, modify, and add new prompts in a server-side JSON file (`prompts.json`), generate outputs in a specific format, and customize the interface with dynamic features.
 
+![image](https://github.com/user-attachments/assets/16a22a3e-d7ec-4716-8cc7-fb5e36efa7b8)
+
+
 ## Overview
 
 The Prompt Generator App consists of:
