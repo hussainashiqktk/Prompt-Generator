@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Prompt Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Prompt Generator</h1>
+        
+        <div class="section">
+            <h2>Prompt Selection</h2>
+            <select id="promptSelect">
+                <option value="">Select a prompt</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <h2>Input</h2>
+            <div class="input-area">
+                <textarea id="inputText" placeholder="Enter Input" rows="4"></textarea>
+                <button id="pasteButton" class="action-button">Paste</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Output</h2>
+            <div class="output-area">
+                <textarea id="outputText" placeholder="Output" rows="4" readonly></textarea>
+                <button id="copyButton" class="action-button">Copy</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Prompt Text (Raw, Editable)</h2>
+            <div class="prompt-area">
+                <pre id="promptText" contenteditable="true"></pre>
+                <textarea id="editPromptInput" placeholder="Edit prompt here (raw text, multi-line)" rows="4" style="width: 100%; margin-top: 10px; padding: 8px;"></textarea>
+                <button id="modifyButton" class="action-button">Modify</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Add New Prompt</h2>
+            <div class="prompt-add-area">
+                <input type="text" id="newPromptTitle" placeholder="Prompt Title (e.g., New Prompt (123/1500))" style="width: 100%; margin-bottom: 10px; padding: 8px;">
+                <textarea id="newPromptText" placeholder="Enter prompt text (multi-line)" rows="4" style="width: 100%; margin-bottom: 10px; padding: 8px;"></textarea>
+                <button id="addPromptButton" class="action-button">Add Prompt</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
